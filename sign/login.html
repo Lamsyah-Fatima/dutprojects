@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="error"></div>
+        <h1 class="logo"><a href="../my_way.html" class="my">My</a><span>Way</span></h1>
+        <form class="form">
+            <input type="text" name="surname" placeholder="name" required><br>
+            <input type="date" name="date" placeholder="birthday" required><br>
+            <input type="text" placeholder="dream-job" required><br>
+            <input type="text" class="email" name="email" placeholder="email" required><br>
+            <button type="submit" onclick="stop()">login</button>
+        </form>
+    </div>
+
+        <script>
+            function stop(){
+                clearInterval(x)
+            }
+            var x=document.getElementsByClassName("login")
+                function s(){
+                    x.style.display="block";
+                }
+                setTimeout(s,2000)
+        </script>
+
+    <script>
+        const email = document.getElementsByClassName('email')
+        const form = document.getElementsByClassName('form')
+        const errorElement = document.getElementsByClassName('error')
+
+        form.addEventListener('submit', (e) => {
+            let messages = []
+            if (email.value === '' || email.value == null) {
+                messages.push('email is required')
+            }
+            if (messages.length > 0) {
+                e.preventDefault()
+                errorElement.innerText = messages.joint(', ')
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

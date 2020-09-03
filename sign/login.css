@@ -1,0 +1,69 @@
+body{
+    background-image: url(back.jpg);
+    background-size: cover;
+    height: 100%;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 490px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    color: #ffffff;
+    padding-top: 60px;
+}
+
+.form{
+    display: block;
+}
+.logo{
+    letter-spacing: 1px;
+    float: left;
+    top: 0;
+}
+.logo .my{text-decoration: none;
+    letter-spacing: 1px;
+    float: left;
+    top: 0;
+    color: #ffffff;
+}
+.logo span{
+    color: #fdcd3c;
+}
+
+.form input{
+    width: 200px;
+    margin-top: 20px;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    border: 0;
+    box-shadow: 0 0 4px #ffffff;
+    transition: box-shadow 0.5s ease;
+}
+
+button{
+    padding: 5px 20px;
+    margin-top: 30px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #ffffff;
+    cursor: pointer;
+}
+
+.form input[placeholder]:focus{
+    color: #ffffff;
+}
+
+.form input:focus, 
+.btn:hover {
+    box-shadow: 0 0 10px #000000 ;
+}
